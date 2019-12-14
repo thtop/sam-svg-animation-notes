@@ -1,0 +1,22 @@
+svg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+path {
+  stroke-dasharray: 563;
+  animation: draw 2s reverse infinite;
+}
+
+@keyframes draw {
+  from {
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dashoffset: 563;
+  }
+}
